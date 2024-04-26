@@ -9,12 +9,13 @@ namespace InstantDialogues
     internal sealed class ModEntry : Mod
     {
         private ModConfig? config;
-        public bool modOn = true;
+        public bool modOn;
         public override void Entry(IModHelper helper)
         {
             config = Helper.ReadConfig<ModConfig>();
+            modOn = config.EnableOnLaunchWhenUseToggleKey;
 
-            if (config.ModEnabled)
+            if (config.EntireModEnabled)
             {
                 helper.Events.Display.MenuChanged += Display_MenuChanged;
                 if (config.UseToggleKey)

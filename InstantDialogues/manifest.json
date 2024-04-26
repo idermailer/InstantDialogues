@@ -1,7 +1,7 @@
 {
   "Name": "Instant Dialogues",
   "Author": "idermailer",
-  "Version": "1.0.0",
+  "Version": "1.0.1",
   "Description": "All dialogs are printed instantly.",
   "UniqueID": "idermailer.InstantDialogues",
   "EntryDll": "InstantDialogues.dll",
